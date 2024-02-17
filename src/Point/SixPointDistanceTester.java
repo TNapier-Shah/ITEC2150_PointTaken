@@ -3,7 +3,7 @@ package Point;
 import java.util.Scanner;
 
 public class SixPointDistanceTester {
-    private static Scanner input = new Scanner(System.in); //we will retrieve multipoints of x and y coordinates.
+    private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
         computeShortestDistance(enterPoint());
@@ -20,7 +20,7 @@ public class SixPointDistanceTester {
             String name = scanner.next();
             double x =scanner.nextDouble();
             double y = scanner.nextDouble();
-            points[i] = new Point(input.nextDouble(), input.nextDouble());
+            points[i] = new Point(x, y);
         }
         return points;
     }
